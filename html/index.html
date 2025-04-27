@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I-RETURN Recycling Rewards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>♻️ I-RETURN</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#rewards">Rewards</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#register">Register/Profile</a>
+      <button onclick="toggleDarkMode()" id="mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" data-aos="fade-up" class="parallax">
+      <h2>Get points and earn real money by returning your recyclable waste!</h2>
+      <p>Every recyclable earns you points you can turn into cryptocurrency or cash.</p>
+      <div class="cta-buttons">
+        <a href="#register" class="cta-button">Start Recycling Now</a>
+        <a href="#rewards" class="cta-button">View Rewards</a>
+      </div>
+      <div class="crypto-logos">
+        <img src="https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=032" alt="USDC" />
+        <img src="https://cryptologos.cc/logos/tether-usdt-logo.png?v=032" alt="USDT" />
+        <img src="https://cryptologos.cc/logos/xrp-xrp-logo.png?v=032" alt="XRP" />
+        <img src="https://cryptologos.cc/logos/cardano-ada-logo.png?v=032" alt="ADA" />
+      </div>
+    </section>
+
+    <section id="about" data-aos="fade-right">
+      <h2>About I-RETURN</h2>
+      <p>We are a rewards program encouraging recycling and sustainability. By recycling plastic, glass, and aluminum, you earn points redeemable for exciting rewards. Let's make a difference together!</p>
+    </section>
+
+    <section id="rewards" data-aos="fade-left">
+      <h2>Redeem Your Points</h2>
+      <p><strong>Your Points:</strong> <span id="user-points">200</span></p>
+      <h3>Available Rewards:</h3>
+      <ul>
+        <li>Recyclable Bags - 100 Points</li>
+        <li>Reusable Water Bottle - 150 Points</li>
+        <li>Gift Card - 500 Points</li>
+      </ul>
+      <div class="center">
+        <button id="redeem-button" onclick="redeemReward()">Redeem Reward</button>
+      </div>
+    </section>
+
+    <section id="testimonials" data-aos="fade-up">
+      <h2>What People Are Saying</h2>
+      <div class="testimonials">
+        <div class="testimonial">"" - </div>
+        <div class="testimonial">"" - </div>
+        <div class="testimonial">"" - </div>
+      </div>
+    </section>
+
+    <section id="register" data-aos="fade-up">
+      <h2>Join I-RETURN</h2>
+      <p>Create your account and start earning rewards today!</p>
+      <div class="cta-buttons">
+        <a href="register.html" class="cta-button">Register</a>
+        <a href="profile.html" class="cta-button">Your Profile</a>
+      </div>
+    </section>
+  </main>
+
+  <footer data-aos="fade-up">
+    <p>© 2025 I-RETURN Recycling Rewards. All Rights Reserved.</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    <div class="social-media-links">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" onclick="scrollTopFunction()">⬆️</button>
+
+  <div id="rewardModal" class="modal">
+    <div class="modal-content">
+      <p id="modal-message"></p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
